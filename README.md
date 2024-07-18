@@ -41,11 +41,12 @@ Let’s do it
 
 
 ## Run the following commands after connecting the EC2 machine.
-Step 1 →
+
+## Step 1 →
   - sudo su
   - apt update -y
 
-# Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
+## Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
 
 ### Setup Docker
   - apt install docker.io
