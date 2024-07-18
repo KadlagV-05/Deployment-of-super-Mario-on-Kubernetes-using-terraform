@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: mario-container
-        image: vinay2326/mario:latest 
+        image: vinay2326/mario-game:latest 
         ports:
         - containerPort: 80
