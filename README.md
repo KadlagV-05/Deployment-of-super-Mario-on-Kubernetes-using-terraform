@@ -87,8 +87,32 @@ Let’s do it
 
 # NOW RUN →
 
-  - terraform init
+1. terraform init
+    
 <img width="990" alt="t" src="https://github.com/user-attachments/assets/b7400f43-cc7e-4945-b786-1a82e4b0630e">
+
+When we run terraform init, it sets up your working area, downloads necessary plugins, and makes sure everything is in place so that you can start using Terraform to create, update, or manage your infrastructure. It's like getting all the tools and materials ready before you start building something amazing with your computer.
+
+2. terraform validate
+
+<img width="661" alt="t1" src="https://github.com/user-attachments/assets/a39efa6b-8579-4cd5-bae1-794f11f85bcd">
+
+Terraform validate reviews our code to catch any syntax errors or mistake and gives an output success if everything is no error in the file
+
+3. terraform plan
+
+<img width="1634" alt="t4" src="https://github.com/user-attachments/assets/f12df00f-4c3d-42b2-aa34-24d39a005b75">
+
+Terraform plan is used to see what changes will be made to your infrastructure. By using this command we could review and confirm that everything looks good before giving the final approval to build or modify our application infrasructure It is like the blueprint of the construction project before actually creating or changing anything with Terraform
+
+4. terraform apply
+
+This command tells the machine to go ahead and start creating the resourses. when the command is executed it read the terraform code in the file and start building the infra accordingly.
+
+<img width="1413" alt="t3" src="https://github.com/user-attachments/assets/b4a9c38b-3ae0-4f3b-8870-4f3b90aff919">
+
+# It takes 5 to 10 min for complete setup.
+
 
     
     
