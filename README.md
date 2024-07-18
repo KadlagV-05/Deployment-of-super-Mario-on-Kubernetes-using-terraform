@@ -1,9 +1,11 @@
 # Deployment-of-super-Mario-on-Kubernetes-using-terraform
 
+# Project Description: Deployment of Super Mario on Kubernetes using Terraform.
+
 ## Overview :
 <img width="588" alt="image_2024_07_18T05_10_06_993Z" src="https://github.com/user-attachments/assets/884e4f9d-5465-401b-8e00-20cec810f7ef">
 
-## Project Description: Deployment of Super Mario on Kubernetes using Terraform.
+
 
 # step by step implementation →
 
