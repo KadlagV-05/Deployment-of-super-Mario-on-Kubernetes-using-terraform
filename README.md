@@ -113,7 +113,57 @@ Let’s do it
 
 # It takes 5 to 10 min for complete setup.
 
+## 5. Below command is used to update the configuration of EKS
 
+  - aws eks update-kubeconfig --name EKS_CLOUD --region us-east-1
+
+### command tells the machine that you are using aws eks service in us-east-1 region and you can use your desired location.
+
+
+# Step 6 → Creation of deployment and service for EKS
+
+ 1. change the directory where deployment and service files are stored use the command → cd ..
+ 2. create the deployment
+```
+kubectl apply -f deployment.yaml 
+```
+<img width="1335" alt="d" src="https://github.com/user-attachments/assets/286aede3-0719-4f90-a2fc-315305ece696">
+
+### deployment.yaml file is like a set of instructions that tells a computer system, "Hey, here's how you should run and manage a particular application " . It provides the necessary information for a computer system to deploy and manage a specific software application. It includes details like what the application is, how many copies of it should run, and other settings that help the system understand how to keep the application up and running smoothly.
+
+ 3. Now create the service
+```
+kubectl apply -f service.yaml
+```
+<img width="1218" alt="s" src="https://github.com/user-attachments/assets/6a9a8320-a95d-44bc-abfd-8947f93fbb52">
+
+### service.yaml file is like a set of rules that helps computers find and talk to each other within a software application. It's like a directory that says, "Hey, this is how you can reach different parts of our application." It specifies how different parts of your application communicate and how other services or users can connect to them.
+
+ 4. Run → 
+```
+kubectl get all
+```
+<img width="1202" alt="p" src="https://github.com/user-attachments/assets/5b4355a8-d942-4b72-a966-c3d189510d2b">
+
+ 5. Now Run the follwing command to get the load balancer ingress
+### This command tells all the details of your application
+```
+kubectl describe service mario-service
+```
+<img width="1342" alt="l" src="https://github.com/user-attachments/assets/2afd03c4-ca59-42fc-8435-125cd4af17c5">
+
+
+# Copy the load balancer ingress and paste it on browser and your game is running
+
+
+<img width="1792" alt="game" src="https://github.com/user-attachments/assets/0bfbc0c5-f4fc-4af5-a6e8-a916dad4393e">
+
+# PLAY AND ENJOY
+
+### Load Balancer Ingress →
+It is a mechanism that helps distribute incoming internet traffic among multiple servers or services, ensuring efficient and reliable delivery of requests.
+
+It’s like having a receptionist at a busy office building entrance who guides visitors to different floors or departments, preventing overcrowding at any one location. In the digital world, a Load Balancer Ingress helps maintain a smooth user experience, improves application performance, and ensures that no single server becomes overwhelmed with too much traffic.
     
     
 
