@@ -165,11 +165,23 @@ It is a mechanism that helps distribute incoming internet traffic among multiple
 
 It’s like having a receptionist at a busy office building entrance who guides visitors to different floors or departments, preventing overcrowding at any one location. In the digital world, a Load Balancer Ingress helps maintain a smooth user experience, improves application performance, and ensures that no single server becomes overwhelmed with too much traffic.
     
-    
+# Step 7 → Destroy all the Insrastructure    
 
+### Below commands delete your deployment and service. After service and deployment destruction it will destroy the infrastructure.
 
+```
+kubectl delete service mario-service
 
+kubectl delete deployment mario-deployment
 
+cd EKS-TF
+
+terraform destroy --auto-approve
+
+Now Go and terminate EC2 instance.
+```
+
+# That’s All
 
 
 
