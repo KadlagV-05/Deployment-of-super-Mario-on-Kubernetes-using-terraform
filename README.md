@@ -75,7 +75,7 @@ Let’s do it
 
 # Step 5 → Building Infrastructure Using terraform
 
-  clone the github repo by → <br>
+## clone the github repo by → <br>
     - mkdir super_mario <br>
     - cd super_mario <br>
     - https://github.com/KadlagV-05/Deployment-of-super-Mario-on-Kubernetes-using-terraform.git <br>
