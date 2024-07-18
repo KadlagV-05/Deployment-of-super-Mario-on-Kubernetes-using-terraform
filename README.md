@@ -39,15 +39,11 @@ Let’s do it
 <img width="1792" alt="5" src="https://github.com/user-attachments/assets/7f232c04-aa35-4fa1-be66-636a207c8f92">
 <img width="1792" alt="6" src="https://github.com/user-attachments/assets/8d906487-6079-46d7-b732-c50f9b037ba4">
 
+# Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl.
 
 ## Run the following commands after connecting the EC2 machine.
-
-## Step 1 →
   - sudo su
   - apt update -y
-
-## Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
-
 ### Setup Docker
   - apt install docker.io
   - usermod -aG docker $USER # Replace with your username e.g ‘ubuntu’
@@ -68,3 +64,41 @@ Let’s do it
   - sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 # Every thing is setup and installed now.
+
+# Step 3 → IAM Role for EC2
+
+### Why we need IAM role for EC2 → It is used by your ec2 instance to create EKS cluster and manage s3 bucket by applying this IAM role it gives the authenticity to your ec2 to do changes in aws account.
+
+## Create IAM role with Administrator Access. 
+
+# Step 4 → Attach the created IAM role with your EC2 machine.
+
+# Step 5 → Building Infrastructure Using terraform
+
+  clone the github repo by →
+    - mkdir super_mario
+    - cd super_mario
+    - https://github.com/KadlagV-05/Deployment-of-super-Mario-on-Kubernetes-using-terraform.git
+    - cd Deployment-of-super-Mario-on-Kubernetes-using-terraform/
+    - cd EKS-TF
+    - edit the backend.tf file by → vim backend.tf  
+  ### (Note →make sure to provide your bucket and region name in this file otherwise it doesn’t work and IAM role is also associated with your ec2 which helps ec2 to use other services such S3 bucket)
+
+
+# NOW RUN →
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
