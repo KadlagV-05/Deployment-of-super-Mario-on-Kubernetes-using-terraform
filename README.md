@@ -181,7 +181,7 @@ terraform destroy --auto-approve
 Now Go and terminate EC2 instance.
 ```
 
-# That’s All
+# That’s All Thank You.
 
 
 
