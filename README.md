@@ -44,7 +44,9 @@ Let’s do it
 Step 1 →
   - sudo su
   - apt update -y
-Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
+
+# Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
+
 ### Setup Docker
   - apt install docker.io
   - usermod -aG docker $USER # Replace with your username e.g ‘ubuntu’
