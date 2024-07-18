@@ -87,6 +87,9 @@ Let’s do it
 
 # NOW RUN →
 
+  - terraform init
+<img width="990" alt="t" src="https://github.com/user-attachments/assets/b7400f43-cc7e-4945-b786-1a82e4b0630e">
+
     
     
 
