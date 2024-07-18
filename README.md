@@ -67,7 +67,7 @@ Let’s do it
 
 # Step 3 → IAM Role for EC2
 
-### Why we need IAM role for EC2 → It is used by your ec2 instance to create EKS cluster and manage s3 bucket by applying this IAM role it gives the authenticity to your ec2 to do changes in aws account.
+ Why we need IAM role for EC2 → It is used by your ec2 instance to create EKS cluster and manage s3 bucket by applying this IAM role it gives the authenticity to your ec2 to do changes in aws account.
 
 ## Create IAM role with Administrator Access. 
 
@@ -75,13 +75,13 @@ Let’s do it
 
 # Step 5 → Building Infrastructure Using terraform
 
-## clone the github repo by → <br>
-    - mkdir super_mario <br>
-    - cd super_mario <br>
-    - https://github.com/KadlagV-05/Deployment-of-super-Mario-on-Kubernetes-using-terraform.git <br>
-    - cd Deployment-of-super-Mario-on-Kubernetes-using-terraform/ <br>
-    - cd EKS-TF <br>
-    - edit the backend.tf file by → vim backend.tf  <br>
+## clone the github repo by →
+    - mkdir super_mario
+    - cd super_mario
+    - https://github.com/KadlagV-05/Deployment-of-super-Mario-on-Kubernetes-using-terraform.git
+    - cd Deployment-of-super-Mario-on-Kubernetes-using-terraform/
+    - cd EKS-TF
+    - edit the backend.tf file by → vim backend.tf
   ### (Note →make sure to provide your bucket and region name in this file otherwise it doesn’t work and IAM role is also associated with your ec2 which helps ec2 to use other services such S3 bucket)
 
 
